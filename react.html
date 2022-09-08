@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+  <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+  <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+</head>
+<body>
+  <div id = "root"></div>
+
+  <script type="text/babel" data-type="module">
+
+    const root = document.getElementById("root");
+    console.log(root);
+
+    function Test(){
+      return(
+        <header>
+          <ul>
+            <li>김근수</li>
+            <li>김근수</li>
+            <li>김근수</li>
+            <li>김근수</li>
+            <li>김근수</li>
+            <li>김근수</li>
+            <li>김근수</li>
+            <li>김근수</li>
+            <li>김근수</li>
+            <li>김근수</li>
+            <li>김근수</li>
+            <li>김근수</li>
+          </ul>
+        </header>
+      );
+    }
+    
+    ReactDOM.render(<Test/>,root);
+    // 컴포넌트 생성, 부품처럼 잘라서 만들고 붙임. 이 함수만 빼서 관리하고 다른 곳에 쓸 수 있음(모듈화)
+
+  </script>
+</body>
+</html>
